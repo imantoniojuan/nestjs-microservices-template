@@ -1,0 +1,37 @@
+
+@url = http://localhost:8080
+@token = token
+@contentType = application/json
+
+
+### login
+POST {{url}}/user/login
+Content-Type: {{contentType}}
+
+{
+    "email": "a1@test.com",
+    "password": "test"
+}
+
+### signup
+POST {{url}}/user/signup
+Content-Type: {{contentType}}
+
+{
+    "email": "a1@test.com",
+    "password": "test",
+    "firstname": "user",
+    "lastname": "test"
+}
+### forgot password
+GET undefined 
+
+
+### change password
+PUT undefined 
+
+{
+    "newPassword": "admin",
+    "token": "Qdg-AqtvRn"
+}
+

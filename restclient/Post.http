@@ -1,0 +1,23 @@
+
+@url = http://localhost:8080/post
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjYyMzgyNTIsImV4cCI6MTY2NzEwMjI1Mn0.HoQBP2r6kToXo9y79sldGFO8Pn87FjvH3aH5MgDqSoY
+@contentType = application/json
+
+
+### Create post
+POST {{url}}/create
+Content-Type: {{contentType}}
+Authorization: Bearer {{token}}
+
+{
+    "content": "test content"
+}
+### Get Posts
+GET {{url}}
+	?page=1
+	&limit=2
+	&term=
+Content-Type: {{contentType}}
+Authorization: Bearer {{token}}
+
+
